@@ -1,0 +1,29 @@
+pypdf
+ocrmypdf
+pymupdf
+pillow
+pytesseract
+
+#for people who swam a race
+^(\d+|\d+.)\s+([a-zA-Z0-9])+,\s+([a-zA-Z0-9])+\s+(\d{1,2}.\d{2}|\d+:\d{2}.\d{2})\s+(\d{,2})$
+#(place 1 or 1.) (lastname) (firstname) (time 0.00, 00.00, 0:00.00) (points)
+
+#for Events
+^([^\s]+)\s+(Women|Men|Mixed)\s+(\d+-\d+)\s+(\d{2,4}\w{,3})\s+([a-zA-Z ]Relay)
+#(event name) (gender of race) (age group) (distance & distance type) (stroke name | relay name)
+
+
+#need to recognize NS possibly DQs
+-- Concepcion, Nicolas NS
+
+#for race results subsequent line is age and team needed for verification
+Age 22 - KSCRW
+
+#lines that need to be processable
+
+
+#problem lines
+7 ~~ Krempasky, Steve 15.35 12 Age 39 - KSCRW
+8 — Gilliam, Lee 16.91 11 Age 37 - The Swim Reapers
+2 —_Jolles, Steve 15.86 17 Age 68 - The Swim Reapers
+3. Hopkins, Jeff 17.90 16 Age 62 - Daleview Pace
