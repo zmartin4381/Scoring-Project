@@ -1,58 +1,24 @@
 import sqlite3
 from dbParser import *
 
+connection = sqlite3.connect("swim_results.db")
+cursor = connection.cursor()
 
-with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file:
+with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file, \
+     open("SwimResults/unparsed.txt", "w", encoding="utf-8") as unparsed_file:
     lines = file.readlines()
 
     meet_id = -1
+    event_id = -1
+
     for line in lines:
-        event = parse_event(line)
-
-        #print("RAW LINE:", repr(line))
+        # parse/insert everything here
         meet = parse_meet(line)
+        event = parse_event(line)
+        result = parse_result(line)
+        relay = parse_relay_result(line)
 
-        if line.startswith("Meet"):
-            print("MEET RESULT:", meet)
-
-        if event is not None:
-            connection = sqlite3.connect("swim_results.db")
-            cursor = connection.cursor()
-
-            cursor.execute(
-                """
-                INSERT OR IGNORE INTO events (
-                    meet_id,
-                    event_code,
-                    gender,
-                    min_age,
-                    max_age,
-                    distance,
-                    course,
-                    stroke
-                )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                """,
-                (
-                    meet_id,
-                    event["event_code"],
-                    event["gender"],
-                    event["min_age"],
-                    event["max_age"],
-                    event["distance"],
-                    event["course"],
-                    event["stroke"],
-                ),
-            )
-            
-
-            connection.commit()
-            connection.close()
-
-        elif meet is not None:
-            connection = sqlite3.connect("swim_results.db")
-            cursor = connection.cursor()
-            
+        if meet is not None:
             cursor.execute(
                 """
                 INSERT OR IGNORE INTO meets (
@@ -79,10 +45,179 @@ with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file:
                 ),
             )
 
-            meet_id = cursor.fetchone()[0]            
+            meet_id = cursor.fetchone()[0]
 
-            connection.commit()
-            connection.close()
-            
+        elif event is not None:
+            cursor.execute(
+                """
+                INSERT OR IGNORE INTO events (
+                    meet_id,
+                    event_code,
+                    gender,
+                    min_age,
+                    max_age,
+                    distance,
+                    course,
+                    stroke
+                )
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    meet_id,
+                    event["event_code"],
+                    event["gender"],
+                    event["min_age"],
+                    event["max_age"],
+                    event["distance"],
+                    event["course"],
+                    event["stroke"],
+                ),
+            )
+
+            cursor.execute(
+                """
+                SELECT event_id
+                FROM events
+                WHERE meet_id = ? AND event_code = ?
+                """,
+                (
+                    meet_id,
+                    event["event_code"]
+                )
+            )
+
+            event_id = cursor.fetchone()[0]
+
+        elif result is not None:
+            cursor.execute(
+                """
+                INSERT OR IGNORE INTO teams (team_name)
+                VALUES (?)
+                """,
+                (result["team"],)
+            )
+
+            cursor.execute(
+                """
+                SELECT team_id
+                FROM teams
+                WHERE team_name = ?
+                """,
+                (result["team"],)
+            )
+
+            team_id = cursor.fetchone()[0]
+
+            cursor.execute(
+                    """
+                    INSERT OR IGNORE INTO swimmers (
+                        first_name,
+                        last_name,
+                        team_id
+                    )
+                    VALUES (?, ?, ?)
+                    """,
+                    (
+                        result["first_name"],
+                        result["last_name"],
+                        team_id
+                    )
+                )
+
+            cursor.execute(
+                """
+                SELECT swimmer_id
+                FROM swimmers
+                WHERE first_name = ?
+                AND last_name = ?
+                AND team_id = ?
+                """,
+                (
+                    result["first_name"],
+                    result["last_name"],
+                    team_id
+                )
+            )
+
+            swimmer_id = cursor.fetchone()[0]
+            points = calculate_points(result["place"])
+
+            cursor.execute(
+                """
+                INSERT OR IGNORE INTO results (
+                    event_id,
+                    meet_id,
+                    swimmer_id,
+                    team_id,
+                    place,
+                    age,
+                    display_time,
+                    points
+                )
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    event_id,
+                    meet_id,
+                    swimmer_id,
+                    team_id,
+                    result["place"],
+                    result["age"],
+                    result["time"],
+                    points
+                )
+            )
+
+        elif relay is not None:
+            cursor.execute("""
+                INSERT OR IGNORE INTO teams (
+                    team_name,
+                    team_code
+                )
+                VALUES (?, ?)
+            """, (
+                relay["team"],
+                relay["team_code"]
+            ))
+
+            cursor.execute("""
+                SELECT team_id
+                FROM teams
+                WHERE team_name = ?
+            """, (
+                relay["team"],
+            ))
+
+            team_id = cursor.fetchone()[0]
+            points = calculate_points_relay(relay["place"])
+
+            cursor.execute("""
+                    INSERT OR IGNORE INTO results (
+                        event_id,
+                        meet_id,
+                        swimmer_id,
+                        team_id,
+                        place,
+                        age,
+                        display_time,
+                        points,
+                        relay_letter
+                    )
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (
+                    event_id,
+                    meet_id,
+                    None,                   # no individual swimmer
+                    team_id,
+                    relay["place"],
+                    None,                   # no individual age
+                    relay["time"],
+                    points,
+                    relay["relay"]
+                ))
+
         else:
-            pass
+            unparsed_file.write(line)
+
+connection.commit()
+connection.close()

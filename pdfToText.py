@@ -6,6 +6,11 @@ from pathlib import Path
 import subprocess
 import sys
 
+meet = "franklinknolls"
+
+input_pdf = "SwimResults/meet4_" + meet + "_results.pdf"
+ocr_pdf = "SwimResults/meet4_" + meet + "_results_ocr.pdf"
+text_output = "SwimResults/meet4.txt"
 
 def run_ocr(input_pdf: str, output_pdf: str) -> None:
     subprocess.run(
@@ -81,11 +86,6 @@ def extract_columns(
         "\n\n".join(sections),
         encoding="utf-8",
     )
-
-
-input_pdf = "SwimResults/meet4_mct_results.pdf"
-ocr_pdf = "SwimResults/meet4_mct_results_ocr.pdf"
-text_output = "SwimResults/meet4.txt"
 
 run_ocr(input_pdf, ocr_pdf)
 extract_columns(

@@ -10,9 +10,12 @@ for line in lines:
     line = line.strip()
     line = re.sub(r"\s+", " ", line)
 
+        # Ignore lines that contain no letters or numbers
+    if not re.search(r"[A-Za-z0-9]", line):
+        continue
     if (
         line.startswith("Age") 
-        and re.search(r"(\d{,2}|NS|\d{,2}\.)$", cleaned[-1])
+        and re.search(r"(\d{1,2}|NS|\d{1,2}\.)$", cleaned[-1])
         ):  
 
         if cleaned:

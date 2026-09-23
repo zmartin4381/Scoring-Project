@@ -10,6 +10,7 @@ cursor.execute("""
         meet_id INTEGER PRIMARY KEY,
         meet_name TEXT NOT NULL,
         meet_date DATE NOT NULL,
+
         UNIQUE (meet_name, meet_date)
     )
 """)
@@ -27,8 +28,10 @@ cursor.execute("""
         swimmer_id INTEGER PRIMARY KEY,
         first_name TEXT NOT NULL,
         last_name TEXT NOT NULL,
-        team_id INTEGER
-        FORIEGN KEY (team_id) REFERENCES teams(team_id)
+        team_id INTEGER,
+
+        FOREIGN KEY (team_id) REFERENCES teams(team_id),
+
         UNIQUE (first_name, last_name, team_id)
     )
 """)
@@ -44,7 +47,9 @@ cursor.execute("""
         distance INTEGER NOT NULL,
         course TEXT NOT NULL,
         stroke TEXT NOT NULL,
+
         FOREIGN KEY (meet_id) REFERENCES meets(meet_id),
+
         UNIQUE(meet_id, event_code)
     )
 """)
@@ -55,19 +60,28 @@ cursor.execute("""
         result_id INTEGER PRIMARY KEY,
         event_id INTEGER NOT NULL,
         meet_id INTEGER NOT NULL,
-        swimmer_id INTEGER NOT NULL,
+        swimmer_id INTEGER,
         team_id INTEGER,
         place INTEGER,
         age INTEGER,
         time_seconds REAL,
         display_time TEXT NOT NULL,
         points INTEGER,
+        relay_letter TEXT,
+
         FOREIGN KEY (event_id) REFERENCES events(event_id),
         FOREIGN KEY (meet_id) REFERENCES meets(meet_id),
         FOREIGN KEY (swimmer_id) REFERENCES swimmers(swimmer_id),
         FOREIGN KEY (team_id) REFERENCES teams(team_id)
-        UNIQUE(meet_id, event_code)
+
+        UNIQUE (event_id, swimmer_id)
     )
+""")
+
+cursor.execute("""
+    CREATE UNIQUE INDEX unique_relay_result
+    ON results(event_id, team_id, relay_letter)
+    WHERE relay_letter IS NOT NULL
 """)
 
 
