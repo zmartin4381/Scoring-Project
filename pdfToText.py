@@ -5,12 +5,22 @@ from pathlib import Path
 
 import subprocess
 import sys
+'''
+meet = "Meet 2 @ Northwest Branch Pool"
 
-meet = "franklinknolls"
+input_pdf = "SwimResults/" + meet + ".pdf"
+ocr_pdf = "SwimResults/" + meet + " ocr.pdf"
+text_output = "TextProcessing/unprocessed.txt"
+'''
 
-input_pdf = "SwimResults/meet4_" + meet + "_results.pdf"
-ocr_pdf = "SwimResults/meet4_" + meet + "_results_ocr.pdf"
-text_output = "SwimResults/meet4.txt"
+pdf_file = Path(sys.argv[1])
+
+meet_name = pdf_file.stem
+
+input_pdf = pdf_file
+ocr_pdf = Path("SwimResults") / f"{pdf_file.stem} ocr.pdf"
+text_output = "TextProcessing/unprocessed.txt"
+
 
 def run_ocr(input_pdf: str, output_pdf: str) -> None:
     subprocess.run(
@@ -32,6 +42,7 @@ def run_ocr(input_pdf: str, output_pdf: str) -> None:
 def extract_columns(
     pdf_path: str,
     output_path: str,
+    meet_name: str,
     margin: float = 8,
 ) -> None:
     document = fitz.open(pdf_path)
@@ -82,14 +93,16 @@ def extract_columns(
                 f"\n{text}"
             )
 
-    Path(output_path).write_text(
-        "\n\n".join(sections),
-        encoding="utf-8",
-    )
+    Path(text_output).write_text(
+    meet_name + "\n" +
+    "\n\n".join(sections),
+    encoding="utf-8"
+)
 
 run_ocr(input_pdf, ocr_pdf)
 extract_columns(
     ocr_pdf,
     text_output,
+    meet_name,
     margin=10,
 )

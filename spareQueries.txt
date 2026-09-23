@@ -1,0 +1,131 @@
+Womens best 25 free best result only
+
+print("\nBest 25m Women's Freestyle")
+
+cursor.execute("""
+    SELECT
+        first_name,
+        last_name,
+        age,
+        display_time,
+        meet_name,
+        team_name
+    FROM (
+        SELECT
+            s.first_name,
+            s.last_name,
+            r.age,
+            r.display_time,
+            m.meet_name,
+            t.team_name,
+            r.time_seconds,
+
+            ROW_NUMBER() OVER (
+                PARTITION BY s.swimmer_id
+                ORDER BY r.time_seconds
+            ) AS rank
+
+        FROM results r
+
+        JOIN events e ON r.event_id = e.event_id
+        JOIN swimmers s ON r.swimmer_id = s.swimmer_id
+        JOIN meets m ON r.meet_id = m.meet_id
+        JOIN teams t ON r.team_id = t.team_id
+
+        WHERE e.gender = ?
+          AND e.distance = ?
+          AND e.stroke = ?
+          AND t.team_name = ?
+    )
+
+    WHERE rank = 1
+
+    ORDER BY time_seconds
+
+""", (
+    "Women",
+    25,
+    "Freestyle",
+    "KSCRW"
+))
+
+rows = cursor.fetchall()
+
+print(f"{'First Name':<10} {'Last Name':<12} {'Age':<5} {'Time':<8} {'Meet':<8}")
+print("-" * 45)
+
+for first_name, last_name, age, time, meet_name, team_name in rows:
+    print(f"{first_name:<10} {last_name:<12} {age:<5} {time:<8} {meet_name:<8}")
+
+
+
+
+
+
+Womens best 25 free
+print("\nBest 25m Women's Freestyle")
+cursor.execute("""
+    SELECT
+        s.first_name,
+        s.last_name,
+        r.age,
+        r.display_time,
+        m.meet_name,
+        t.team_name
+    FROM results r
+    JOIN events e ON r.event_id = e.event_id
+    JOIN swimmers s ON r.swimmer_id = s.swimmer_id
+    JOIN meets m ON r.meet_id = m.meet_id
+    JOIN teams t ON r.team_id = t.team_id
+    WHERE e.gender = ?
+      AND e.distance = ?
+      AND e.stroke = ?
+      AND t.team_name = ?
+    ORDER BY r.time_seconds
+""", (
+    "Women",
+    25,
+    "Freestyle",
+    "KSCRW"
+))
+
+rows = cursor.fetchall()
+
+print(f"{'First Name':<10} {'Last Name':<12} {'Age':<5} {'Time':<8} {'Meet':<8}")
+print("-" * 45)
+
+for first_name, last_name, age, time, meet_date, team_name in rows:
+    print(f"{first_name:<10} {last_name:<12} {age:<5} {time:<8} {meet_date:<8}")
+
+
+
+
+#Search for a swimmer
+print()
+cursor.execute("""
+    SELECT
+        s.first_name,
+        s.last_name,
+        r.age,
+        r.display_time,
+        m.meet_name
+    From results r
+    JOIN events e ON r.event_id = e.event_id
+    JOIN swimmers s ON r.swimmer_id = s.swimmer_id
+    JOIN meets m ON r.meet_id = m.meet_id
+    WHERE s.first_name = ?
+      AND e.distance = ?
+      AND e.stroke = ?
+    ORDER BY r.time_seconds
+    """, (
+        "Steve",
+        25,
+        "Freestyle"
+    ))
+
+rows = cursor.fetchall()
+
+print(f"{'First Name':<10} {'Last Name':<12} {'Age':<5} {'Time':<8} {'Meet':<8}")
+print("-" * 45)
+for first_name, last_name, age, time, meet_date in rows:
+    print(f"{first_name:<10} {last_name:<12} {age:<5} {time:<8} {meet_date:<8}")

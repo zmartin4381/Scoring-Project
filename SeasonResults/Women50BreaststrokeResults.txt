@@ -1,0 +1,57 @@
+Place First Name   Last Name    Age   Time     Meet       Team      
+--------------------------------------------------------------------------
+1     Audrey       Csokmay      22    37.57    Meet 5     Slowbro SC
+2     Susan        Kim          38    38.55    Meet 5     Slowbro SC
+3     Krislyn      Porter       26    39.58    Meet 5     WoodPac   
+4     Maggie       Rook         21    39.93    Meet 5     Hard Times Swim
+5     Josie        DeRonja      25    40.16    Meet 1     Currents  
+6     Hailey       Cronan       21    40.21    Meet 5     Hard Times Swim
+7     Courtney     Randolph     35    40.31    Meet 4     Slowbro SC
+8     Nomi         Bortnick     20    41.84    Meet 1     Currents  
+9     Mara         Csokmay      50    41.94    Meet 5     Slowbro SC
+10    Haile        Cronan       21    42.13    Meet 3     Hard Times Swim
+11    Caroline     Watkins      18    42.25    Meet 5     Hard Times Swim
+12    Molly        Scott        48    42.41    Meet 5     Currents  
+13    Caroline     Florence     29    44.22    Meet 5     Cool Down Club
+14    Anne         Rothman      53    44.43    Meet 5     Currents  
+15    Megan        McWilliams   41    44.49    Meet 2     The Wet Bandits
+16    Ginny        Glasgow      47    44.54    Meet 5     Currents  
+17    Meredith     W            19    44.67    Meet 5     KSCRW     
+18    Rachel       Jung         33    44.72    Meet 5     The Swim Reapers
+19    Sarah        Song         22    44.85    Meet 5     WashedWealth
+20    Kelly        Seyed        47    45.08    Meet 1     The Wet Bandits
+21    Abbie        Baldree      20    45.36    Meet 5     WashedWealth
+22    Denise       Dombay       60    45.57    Meet 5     KSCRW     
+23    Naomi        Kolb         41    45.93    Meet 5     Glenwood Tigers
+24    Hannah       Nixon        41    46.07    Meet 5     The Swim Reapers
+25    Lizzie       Lodinsky     35    46.37    Meet 1     DMV Free Agents
+26    Cayla        Brown        19    46.73    Meet 4     KSCRW     
+27    Mary         Wallack      70    46.81    Meet 5     Currents  
+28    Edmi         Vazquez      36    46.95    Meet 3     Slowbro SC
+29    Pam          Stokes       40    47.14    Meet 3     The Wet Bandits
+30    Marciela     DeGrace      41    47.86    Meet 4     Daleview Pace
+31    Emma         Tom          23    47.92    Meet 5     WoodPac   
+32    Shannon      Garvey       49    48.77    Meet 4     Glenwood Tigers
+33    Jennifer     Penzes       43    49.41    Meet 4     Wildwood Wombats
+34    Colleen      Nolan        39    50.51    Meet 3     DMV Free Agents
+35    Julia        Demarest     32    51.29    Meet 5     Slowbro SC
+36    Zoe          Goozner      33    52.70    Meet 5     Glenwood Tigers
+37    Elisabeth    Deal         62    53.15    Meet 4     The Swim Reapers
+38    Robin        Witkin       62    53.27    Meet 5     The Wet Bandits
+39    Mary         Webb         43    53.44    Meet 5     Glenwood Tigers
+40    Katherine    Pomeroy      50    54.83    Meet 1     The Wet Bandits
+41    Susan        Baker        52    55.02    Meet 5     Currents  
+42    Susan        Baker        52    55.14    Meet 2     The Swim Reapers
+43    Chelsea      Fox          28    56.14    Meet 4     KSCRW     
+44    Maia         Lawn         45    56.44    Meet 5     The Swim Reapers
+45    Sabrina      Green        45    56.51    Meet 1     Slowbro SC
+46    Joan         Ferrara      52    56.81    Meet 5     KSCRW     
+47    Chelsea      Yeatman      38    59.00    Meet 1     The Swim Reapers
+48    Maia         tawn         45    98.64    Meet 3     The Swim Reapers
+49    Judith       Nielsen      69    1:12.72  Meet 2     The Swim Reapers
+50    Mary         Pastel       73    1:05.69  Meet 2     The Swim Reapers
+51    Valerie      Grussing     48    1:01.69  Meet 2     Glenwood Tigers
+52    Erica        Bailey       50    1:09.73  Meet 5     The Swim Reapers
+53    Marion       Chakiath     52    1:03.76  Meet 2     KSCRW     
+54    Deirdre      Bond         64    1:01.61  Meet 4     Silver Spring
+55    Kate         Chiocchio    63    1:13.48  Meet 3     The Swim Reapers

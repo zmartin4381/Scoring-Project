@@ -1,6 +1,30 @@
 import re
+import ast
+from difflib import SequenceMatcher
 from datetime import datetime
 
+KNOWN_TEAMS = [
+    ("The Swim Reapers", "TSR"),
+    ("The Wet Bandits", "WTBDT"),
+    ("Hard Times Swim", "HTST"),
+    ("Pooligans", None),
+    ("DMV Free Agents", None),
+    ("Currents", None),
+    ("Wildwood Wombats", None),
+    ("Silver Spring", "SPSF"),
+    ("Slowbro SC", "SBSC"),
+    ("KSCRW", "KSCRW"),
+    ("Glenwood Tigers", "GLNWD"),
+    ("Somerset Whales", None),
+    ("Cool Down Club", "CDC"),
+    ("Daleview Pace", None),
+    ("WoodPac", "WP"),
+    ("WashedWealth", "WW"),
+    ("Jimmy's Swim Club", None),
+    ("The Heat Strokes", None),
+    ("SuitUp Now", None),
+    ("STJ Masters", None),
+]
 
 event_pattern = re.compile(
     r"^#"
@@ -18,9 +42,9 @@ event_pattern = re.compile(
 
 meet_pattern = re.compile(
     r"^"
-    r"([^\-]+)"                             # Meet name
-    r"\s+—\s+"                              # Em dash
-    r"([A-Za-z]{3}\s+\d{1,2},\s+\d{4})$"    # Date
+    r"(Meet\s+\d+)\s+@\s+"                  # Meet name
+    r"([a-zA-Z|\s]+)[^\d]+"                 # Meet location
+    r"(\w{3})\s+(\d+),\s+(\d{4})"           # Date
 )
 
 result_pattern = re.compile(
@@ -28,9 +52,9 @@ result_pattern = re.compile(
     r"([^,]+),\s+"                          # last name
     r"(.+?)\s+"                             # first name
     r"(\d+:\d{2}\.\d{2}|\d+\.\d{2})\s+"     # time
-    r"(?:\d+\s+)?"                          # optional points
     r"Age\s+(\d+)\s*-\s*"                   # age
-    r"(.+)$"                                # team
+    r"([\w\s]+)-"                          # team
+    r"(\w+)"                                #team code
 )
 
 relay_pattern = re.compile(
@@ -39,7 +63,7 @@ relay_pattern = re.compile(
     r"(\d+:\d{2}\.\d{2}|\d+\.\d{2})\s+"     # time
     r"Relay\s+([A-Z])\s*"                   # relay A/B/etc.
     r"[-:]\s*"                              # - or :
-    r"(.+)$"                                # team code
+    r"([^-])$"                              # team code
 )
 
 def parse_relay_result(line):
@@ -68,7 +92,8 @@ def parse_result(line):
             "first_name": match.group(3).strip(),
             "time": match.group(4),
             "age": int(match.group(5)),
-            "team": match.group(6).strip()
+            "team": match.group(6).strip(),
+            "team_code": match.group(7).strip()
             }
 
 def parse_event(line):
@@ -81,15 +106,15 @@ def parse_event(line):
         event_code = match.group(1)
         gender = match.group(2)
 
-        if re.match(r"(\d+-\d+)", age_group):   #Regular Age Group
+        if re.match(r"(\d+-\d+)", age_group):           #Regular Age Group
             ages = age_group.split("-")
-            min_age = int(ages[0])    #need to use split data from ages
+            min_age = int(ages[0])    
             max_age = int(ages[1])
 
-        elif re.match(r"Open", age_group):  #Open Age Group
+        elif re.match(r"Open", age_group):              #Open Age Group
             min_age = 18
             max_age = None
-        elif re.match(r"\d+\s+&\s+Over", age_group):    #Mac Age Group
+        elif re.match(r"\d+\s+&\s+Over", age_group):    #Max Age Group
             ages = age_group.split()
             min_age = int(ages[0])
             max_age = None
@@ -108,25 +133,61 @@ def parse_event(line):
             "stroke": stroke,
         }
 
-#line = "#12E Women 60-69 50m Freestyle"
-#parse_event(line)
-
 def parse_meet(line):
     match = meet_pattern.match(line)
 
     if not match:
         return None
     
-    date = datetime.strptime(match.group(2), "%b %d, %Y")
+    date = datetime.strptime(
+        f"{match.group(3)} {match.group(4)}, {match.group(5)}",
+        "%b %d, %Y"
+    )
 
     return {
         "meet_name": match.group(1).strip(),
+        "meet_location": match.group(2).strip(),
         "meet_date": date.strftime("%Y-%m-%d")
     }
 
-#line = "Meet 4 @ Mill Creek Towne — Jul 12, 2026"
-#parse_meet(line)
 
+def normalize_team_name(name):
+    name = name.lower()
+
+    name = re.sub(r"[^a-z0-9\s]", " ", name)
+    name = re.sub(r"\s+", " ", name)
+    return name.strip()
+
+def match_team(team_name, threshold = 0.8):
+    cleaned = normalize_team_name(team_name)
+
+    best_team = None
+    best_score = 0
+    for name, abbreviation in KNOWN_TEAMS:
+        known_cleaned = normalize_team_name(name)
+
+        score = SequenceMatcher(
+            None,
+            cleaned,
+            known_cleaned
+        ).ratio()
+
+        if score > best_score:
+            best_score = score
+            best_team = (name, abbreviation)
+
+        if best_score >= threshold:
+            return best_team
+    return None
+
+
+def time_converter(time):
+    try:
+        num = ast.literal_eval(time)
+        if isinstance(num, float):
+            return num;
+    except:
+        return 999.99;
 
 def calculate_points(place):
     point_values = {

@@ -1,0 +1,79 @@
+Place First Name   Last Name    Age   Time     Meet       Team      
+--------------------------------------------------------------------------
+1     Alex         Colson       25    10.97    Meet 5     The Swim Reapers
+2     Everett      Oehler       23    11.51    Meet 5     Slowbro SC
+3     Everett      Oe6ehler     23    11.77    Meet 1     Slowbro SC
+4     GG           Ancheta      18    12.03    Meet 5     KSCRW     
+5     Nick         Lowell       22    12.33    Meet 5     KSCRW     
+6     Evan         Graham       20    12.60    Meet 2     Slowbro SC
+7     Jeremy       Butler       45    12.60    Meet 5     Glenwood Tigers
+8     Eric         Schaffling   35    12.81    Meet 5     The Swim Reapers
+9     Eli          Reinhold     22    12.83    Meet 5     The Swim Reapers
+10    Mark         Smith        32    12.88    Meet 2     Slowbro SC
+11    Zachary      Martin       23    12.95    Meet 5     KSCRW     
+12    Jordan       Webster      22    12.99    Meet 5     The Swim Reapers
+13    Alex         Munson       28    13.16    Meet 2     The Wet Bandits
+14    Jon          Burnsky      33    13.21    Meet 5     The Wet Bandits
+15    Maxim        Geller       26    13.42    Meet 1     Currents  
+16    Ray          Mukoyama     19    13.44    Meet 3     Slowbro SC
+17    Zach         Fayed        19    13.46    Meet 5     Wildwood Wombats
+18    Jose         Gallagher    50    13.56    Meet 1     The Wet Bandits
+19    Will         Mayo         21    13.60    Meet 3     Currents  
+20    Marrick      Golladay     25    13.61    Meet 2     Silver Spring
+21    Braden       Mallios      22    13.66    Meet 2     Currents  
+22    Andrew       Trunsky      28    13.76    Meet 2     Cool Down Club
+23    James        Kissel       21    13.80    Meet 2     Slowbro SC
+24    Kai          Lee          23    13.82    Meet 2     KSCRW     
+25    Garrett      Sooter       28    14.28    Meet 5     Cool Down Club
+26    Jamie        Grimes       47    14.29    Meet 5     Slowbro SC
+27    Garrett      Nicholson    21    14.30    Meet 5     WashedWealth
+28    Timothy      Melinson     51    14.32    Meet 1     Currents  
+29    Jake         Balatan      20    14.32    Meet 5     Silver Spring
+30    Sean         Muleady      31    14.32    Meet 4     Slowbro SC
+31    Nathan       Meadows      52    14.35    Meet 1     The Wet Bandits
+32    Alex         Wetzler      41    14.39    Meet 1     The Wet Bandits
+33    Dylan        Rawlins      20    14.42    Meet 4     Silver Spring
+34    Red          Kidane       25    14.64    Meet 1     The Swim Reapers
+35    Ryan         Niemczuk     25    14.67    Meet 5     The Swim Reapers
+36    Dan          Donnelly     38    14.73    Meet 5     The Wet Bandits
+37    Alain        Vu           25    14.73    Meet 2     Slowbro SC
+38    Akshay       Gandhi       36    14.75    Meet 1     Slowbro SC
+39    Bill         Corrigan     37    14.85    Meet 4     The Swim Reapers
+40    Anthony      Lozupone     31    14.86    Meet 1     Hard Times Swim
+41    Brian        Kissel       20    14.96    Meet 3     Hard Times Swim
+42    William      Rook         19    14.97    Meet 2     Hard Times Swim
+43    Alexey       Gorshkov     44    15.09    Meet 4     Slowbro SC
+44    Mark         Williams     21    15.14    Meet 3     The Wet Bandits
+45    Jon          Hegna        47    15.22    Meet 4     Currents  
+46    Joshua       Silverstein  41    15.25    Meet 1     The Swim Reapers
+47    Anthony      Higgins      57    15.25    Meet 3     The Swim Reapers
+48    Kevin        Nam          30    15.28    Meet 2     Slowbro SC
+49    Dustin       Davis        34    15.29    Meet 5     The Swim Reapers
+50    Brian        Frantz       50    15.44    Meet 1     The Swim Reapers
+51    Blake        Warner       45    15.51    Meet 5     Slowbro SC
+52    Bobby        Bakh         22    15.57    Meet 5     The Swim Reapers
+53    Nardo        Day          54    15.60    Meet 5     Currents  
+54    Robert       Murphy       47    15.66    Meet 2     Glenwood Tigers
+55    Peter        Johnson      41    15.75    Meet 3     Silver Spring
+56    Zane         Aldworth     50    15.76    Meet 1     Hard Times Swim
+57    Karl         Wunderlich   61    15.88    Meet 4     KSCRW     
+58    Patrick      Baker        54    15.89    Meet 5     Currents  
+59    Bob          Bakh         54    16.19    Meet 1     The Swim Reapers
+60    Timothy      Toh          36    16.28    Meet 3     Slowbro SC
+61    Ben          Frick        26    16.37    Meet 2     KSCRW     
+62    Matt         Brew         45    16.60    Meet 5     The Swim Reapers
+63    Steve        Krempasky    39    16.64    Meet 2     KSCRW     
+64    Gerry        Schaffling   65    16.67    Meet 4     The Swim Reapers
+65    Jason        George       39    16.88    Meet 5     KSCRW     
+66    Christopher  Burger       42    16.89    Meet 5     STJ Masters
+67    Steve        Jolles       68    17.33    Meet 5     The Swim Reapers
+68    Chad         Chadbourn    42    17.38    Meet 5     Silver Spring
+69    Alex         Ochs         32    17.40    Meet 5     KSCRW     
+70    Russell      Green        54    17.55    Meet 5     Somerset Whales
+71    Andrew       Fraser       59    17.73    Meet 3     Glenwood Tigers
+72    James        Bishop       52    17.75    Meet 5     The Wet Bandits
+73    William      Brennan      73    18.68    Meet 2     Glenwood Tigers
+74    Andy         Shulman      55    18.94    Meet 5     The Swim Reapers
+75    Shay         Knaani       44    19.57    Meet 1     Somerset Whales
+76    Greg         Nelson       66    19.73    Meet 1     The Swim Reapers
+77    David        Merkin       61    36.50    Meet 4     The Swim Reapers

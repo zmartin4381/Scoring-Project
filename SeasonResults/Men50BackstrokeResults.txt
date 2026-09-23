@@ -1,0 +1,30 @@
+Place First Name   Last Name    Age   Time     Meet       Team      
+--------------------------------------------------------------------------
+1     Evan         Graham       20    26.46    Meet 5     Slowbro SC
+2     GG           Ancheta      18    27.01    Meet 5     KSCRW     
+3     Quinn        Marchionini  20    27.28    Meet 2     Silver Spring
+4     Nick         Lowell       22    28.67    Meet 5     KSCRW     
+5     Alex         Munson       28    28.76    Meet 5     The Wet Bandits
+6     Caleb        Chen         19    29.50    Meet 5     Currents  
+7     Zach         Fayed        19    29.66    Meet 5     Wildwood Wombats
+8     Jose         Gallagher    50    30.22    Meet 5     The Wet Bandits
+9     Zachary      Martin       23    30.22    Meet 5     KSCRW     
+10    Andrew       Trunsky      28    30.54    Meet 5     Cool Down Club
+11    Anthony      Higgins      57    30.94    Meet 5     The Swim Reapers
+12    Eric         Schaffling   35    32.37    Meet 5     The Swim Reapers
+13    Dylan        Rawlins      20    33.21    Meet 4     Silver Spring
+14    Maxim        Geller       26    33.71    Meet 1     Currents  
+15    William      Rook         19    33.81    Meet 5     Hard Times Swim
+16    Akshay       Gandhi       36    34.36    Meet 1     Slowbro SC
+17    Robert       Murphy       47    36.11    Meet 5     Glenwood Tigers
+18    Blake        Warner       45    36.33    Meet 5     Slowbro SC
+19    Kempsey      Clark        36    36.55    Meet 5     KSCRW     
+20    Zane         Aldworth     50    38.88    Meet 5     Hard Times Swim
+21    Dan          Donnelly     38    39.22    Meet 4     The Wet Bandits
+22    Bob          Bakh         54    40.71    Meet 3     The Swim Reapers
+23    Matt         Brew         45    40.72    Meet 5     The Swim Reapers
+24    Nathan       Meadows      52    41.00    Meet 1     The Wet Bandits
+25    Ryan         Edelstein    26    41.48    Meet 5     WoodPac   
+26    Jason        George       39    42.63    Meet 5     KSCRW     
+27    Brian        Frantz       50    44.96    Meet 3     The Swim Reapers
+28    Gerry        Schaffling   65    47.26    Meet 3     The Swim Reapers

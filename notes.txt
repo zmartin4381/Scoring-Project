@@ -1,0 +1,30 @@
+Todo
+    -
+
+Run Order
+-pdfToText
+-textCleaner
+-matchPrep
+--calls dbParser
+-insert
+--calls dbParser
+-query
+
+Meet names
+Meet 1 @ Potomac Woods
+Meet 1 @ Tallyho
+Meet 2 @ Northwest Branch Pool
+Meet 2 @ Somerset
+Meet 3 @ Mill Creek Towne
+Meet 3 @ Tallyho
+Meet 4 @ Franklin Knolls
+Meet 4 @ Mill Creek Towne
+Championship @ Rockville
+
+(16, '~~ Silver Spring', 'SPSF')
+(17, '“Hard Times: Swim:', None)
+(18, 'The Swim‘ Reapers', None)
+(19, 'The Swim Reapers 10 Thornton, Amy 29.26 5 Age 43 - The Wet Bandits', None)
+(20, 'The Swim; Reapers', None)
+(21, 'The Swimi Reapers', None)
+(22, 'The swim Reapers', None)

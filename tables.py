@@ -9,9 +9,10 @@ cursor.execute("""
     CREATE TABLE meets (
         meet_id INTEGER PRIMARY KEY,
         meet_name TEXT NOT NULL,
+        meet_location TEXT NOT NULL,
         meet_date DATE NOT NULL,
 
-        UNIQUE (meet_name, meet_date)
+        UNIQUE (meet_name, meet_date, meet_location)
     )
 """)
 

@@ -1,0 +1,58 @@
+Place First Name   Last Name    Age   Time     Meet       Team      
+--------------------------------------------------------------------------
+1     Maggie       Rook         21    1:15.75  Meet 1     Hard Times Swim
+2     Hailey       Cronan       21    1:15.57  Meet 5     Hard Times Swim
+3     Erica        McGovern     29    1:28.85  Meet 2     The Swim Reapers
+4     Rachel       Jung         33    1:38.76  Meet 3     The Swim Reapers
+5     Colleen      Nolan        39    1:38.05  Meet 1     DMV Free Agents
+6     Alexis       Crowley      43    1:31.95  Meet 2     The Wet Bandits
+7     Allison      Beinecke     43    1:28.34  Meet 4     The Swim Reapers
+8     Anne         Rothman      53    1:29.26  Meet 4     Currents  
+9     Jean         Veta         72    1:59.36  Meet 4     Hard Times Swim
+10    Emma         Coggins      30    1:25.03  Meet 1     The Swim Reapers
+11    Ginny        Glasgow      47    1:30.83  Meet 5     Currents  
+12    Maia         Lawn         45    2:00.00  Meet 1     The Swim Reapers
+13    Josie        DeRonja      25    1:17.53  Meet 1     Currents  
+14    Nomi         Bortnick     20    1:24.12  Meet 4     Currents  
+15    Molly        Scott        48    1:28.38  Meet 2     Currents  
+16    Norah        Rothman      22    1:20.00  Meet 1     Currents  
+17    Cayla        Brown        19    1:31.39  Meet 1     KSCRW     
+18    Susan        Kim          38    1:20.16  Meet 1     Slowbro SC
+19    Amy          Funk         38    1:25.07  Meet 2     KSCRW     
+20    Katie        Lee          39    1:23.91  Meet 1     Silver Spring
+21    Samantha     Herrera      44    1:26.42  Meet 1     Silver Spring
+22    Dana         Harrar       47    1:27.52  Meet 3     Slowbro SC
+23    Kristen      Frost        48    1:43.75  Meet 1     Slowbro SC
+24    Jenny        Carswell     52    1:27.20  Meet 1     KSCRW     
+25    Mara         Csokmay      50    1:24.06  Meet 4     Slowbro SC
+26    Denise       Dombay       60    1:33.66  Meet 1     KSCRW     
+27    Audrey       Csokmay      22    1:17.85  Meet 4     Slowbro SC
+28    Meredith     W            19    1:20.09  Meet 2     KSCRW     
+29    Gabi         Meisel       26    1:23.20  Meet 5     Slowbro SC
+30    Courtney     Randolph     35    1:15.98  Meet 1     Slowbro SC
+31    Priscilla    Bacon        53    2:19.92  Meet 4     Silver Spring
+32    Lizzie       Lodinsky     35    1:28.45  Meet 1     DMV Free Agents
+33    Naomi        Kolb         41    1:36.61  Meet 4     Glenwood Tigers
+34    Brooke       Kenny        48    1:28.80  Meet 4     Glenwood Tigers
+35    Kim          Brien        44    1:21.96  Meet 4     Silver Spring
+36    Alison       Williams     41    1:32.16  Meet 1     Slowbro SC
+37    Emma         Schulman     24    1:16.35  Meet 3     Cool Down Club
+38    Nicole       Shen         21    1:27.26  Meet 2     Cool Down Club
+39    Annaklara    Doel         27    1:16.62  Meet 3     Cool Down Club
+40    Caroline     Florence     29    1:24.35  Meet 2     Cool Down Club
+41    Gabby        Cruz         31    1:35.61  Meet 3     Silver Spring
+42    Nik          Sushka       43    1:56.72  Meet 2     The Swim Reapers
+43    Jennifer     Penzes       43    1:35.15  Meet 2     Wildwood Wombats
+44    Hannah       Chao         27    1:16.45  Meet 2     Currents  
+45    Shelley      Vanneman     59    1:45.64  Meet 4     Currents  
+46    Ella         Crown        19    1:13.58  Meet 5     KSCRW     
+47    Marion       Chakiath     52    2:03.27  Meet 5     KSCRW     
+48    Jeannine     Williams     49    1:49.61  Meet 5     The Wet Bandits
+49    Hannah       hao          27    1:18.86  Meet 3     Currents  
+50    Staci        Schaffling   32    1:22.60  Meet 3     The Swim Reapers
+51    Marciela     DeGrace      41    1:27.10  Meet 4     Daleview Pace
+52    Mia          Spahn        20    1:25.72  Meet 5     WashedWealth
+53    Jacquelyn    Braithwaite  31    1:34.83  Meet 5     WoodPac   
+54    Virginia     Sheikh       52    1:42.72  Meet 5     The Wet Bandits
+55    Sara         Spahn        20    1:28.13  Meet 5     WashedWealth
+56    Madelyn      Porter       21    1:15.35  Meet 5     WoodPac   

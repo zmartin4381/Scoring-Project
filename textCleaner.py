@@ -1,6 +1,6 @@
 import re
 
-with open("SwimResults/meet4.txt", "r") as file:
+with open("TextProcessing/unprocessed.txt", "r") as file:
     lines = file.readlines()
 
 cleaned = []
@@ -46,6 +46,6 @@ for line in lines:
     else:
         cleaned.append(line)
 
-with open("SwimResults/output.txt", "w") as file:
+with open("TextProcessing/cleaned.txt", "a") as file:
     for line in cleaned:
         file.write(line + "\n")

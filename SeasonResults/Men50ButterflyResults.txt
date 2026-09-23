@@ -1,0 +1,48 @@
+Place First Name   Last Name    Age   Time     Meet       Team      
+--------------------------------------------------------------------------
+1     Everett      Oehler       23    24.23    Meet 5     Slowbro SC
+2     Alex         Colson       25    24.24    Meet 5     The Swim Reapers
+3     Quinn        Marchionini  20    26.67    Meet 1     Silver Spring
+4     Ray          Mukoyama     19    26.97    Meet 5     Slowbro SC
+5     GG           Ancheta      18    27.19    Meet 2     KSCRW     
+6     Jordan       Webster      22    27.58    Meet 5     The Swim Reapers
+7     Eric         Schaffling   35    27.59    Meet 5     The Swim Reapers
+8     Jeremy       Butler       45    27.66    Meet 5     Glenwood Tigers
+9     Alex         Munson       28    27.83    Meet 5     The Wet Bandits
+10    Mark         Smith        32    27.90    Meet 5     Slowbro SC
+11    Eli          Reinhold     22    28.42    Meet 5     The Swim Reapers
+12    Caleb        Chen         19    28.55    Meet 5     Currents  
+13    Jeff         Roddin       57    29.09    Meet 5     Glenwood Tigers
+14    Braden       Mallios      22    29.13    Meet 5     Currents  
+15    CJ           Arena        27    29.22    Meet 5     Cool Down Club
+16    Daniel       Greigg       24    29.62    Meet 5     Hard Times Swim
+17    Jake         Balatan      20    29.73    Meet 5     Silver Spring
+18    Kai          Lee          23    29.86    Meet 5     KSCRW     
+19    James        Kissel       21    29.90    Meet 5     Slowbro SC
+20    Jon          Burnsky      33    30.00    Meet 1     The Wet Bandits
+21    Timothy      Melinson     51    30.12    Meet 1     Currents  
+22    Matteo       Harris       26    30.53    Meet 5     WoodPac   
+23    Sean         Muleady      31    31.20    Meet 5     Slowbro SC
+24    Alex         Wetzler      41    31.61    Meet 1     The Wet Bandits
+25    Maxim        Geller       26    31.74    Meet 3     Currents  
+26    Michael      Ledecky      32    32.33    Meet 2     Currents  
+27    Jose         Gallagher    50    32.41    Meet 3     The Wet Bandits
+28    James        Martens      44    32.69    Meet 2     Currents  
+29    Anthony      Higgins      57    32.75    Meet 2     The Swim Reapers
+30    Nathan       Meadows      52    32.77    Meet 1     The Wet Bandits
+31    Marrick      Golladay     25    33.78    Meet 1     Silver Spring
+32    Bill         Corrigan     37    33.86    Meet 2     The Swim Reapers
+33    Nardo        Day          54    34.00    Meet 1     Currents  
+34    Patrick      Baker        54    35.32    Meet 5     Currents  
+35    Peter        Johnson      41    36.56    Meet 3     Silver Spring
+36    Brian        Frantz       50    36.59    Meet 4     The Swim Reapers
+37    Steve        Jolles       68    37.00    Meet 1     The Swim Reapers
+38    Zane         Aldworth     50    37.38    Meet 2     Hard Times Swim
+39    Ricky        Veatch       32    37.49    Meet 5     WashedWealth
+40    William      Adams        60    37.53    Meet 5     Currents  
+41    Kempsey      Clark        36    37.64    Meet 2     KSCRW     
+42    Gerry        Schaffling   65    37.80    Meet 5     The Swim Reapers
+43    Christopher  Burger       42    37.87    Meet 5     STJ Masters
+44    Jason        George       39    38.06    Meet 5     KSCRW     
+45    Steve        Krempasky    39    39.56    Meet 1     KSCRW     
+46    Russell      Green        54    39.61    Meet 1     Somerset Whales

@@ -1,0 +1,31 @@
+Place First Name   Last Name    Age   Time     Meet       Team      
+--------------------------------------------------------------------------
+1     Margaret     Conze        55    31.45    Meet 5     Hard Times Swim
+2     Emma         Schulman     24    32.35    Meet 2     Cool Down Club
+3     Staci        Schaffling   32    32.87    Meet 5     The Swim Reapers
+4     Josie        DeRonja      25    33.00    Meet 1     Currents  
+5     Madelyn      Porter       21    33.76    Meet 5     WoodPac   
+6     Jaylinne     Cardenas     20    33.79    Meet 5     KSCRW     
+7     Katie        Cardenas     22    33.84    Meet 5     KSCRW     
+8     Norah        Rothman      22    33.86    Meet 5     Currents  
+9     Hannah       Chao         27    34.29    Meet 4     Currents  
+10    Emma         Coggins      30    35.00    Meet 1     The Swim Reapers
+11    Meredith     W            19    35.04    Meet 5     KSCRW     
+12    Katie        Lee          39    35.96    Meet 5     Silver Spring
+13    Maija        Fitzpatrick  24    36.03    Meet 1     KSCRW     
+14    Nicole       Shen         21    36.06    Meet 3     Cool Down Club
+15    Kim          Brien        44    36.23    Meet 5     Silver Spring
+16    Cayla        Brown        19    37.06    Meet 2     KSCRW     
+17    Amy          Funk         38    37.53    Meet 2     KSCRW     
+18    Dana         Harrar       47    38.35    Meet 4     Slowbro SC
+19    Jenny        Carswell     52    39.25    Meet 2     KSCRW     
+20    Anne         Rothman      53    39.75    Meet 5     Currents  
+21    Kate         Bouwkamp     41    42.41    Meet 3     The Swim Reapers
+22    Taylor       Donnelly     33    42.92    Meet 5     SuitUp Now
+23    Alexis       Crowley      43    43.18    Meet 2     The Wet Bandits
+24    Jeannine     Williams     49    45.80    Meet 5     The Wet Bandits
+25    Elisabeth    Deal         62    46.91    Meet 3     The Swim Reapers
+26    Nik          Sushka       43    47.73    Meet 5     The Swim Reapers
+27    Colleen      Nolan        39    48.35    Meet 2     DMV Free Agents
+28    Rachel       Jung         33    49.54    Meet 4     The Swim Reapers
+29    Alison       Candela      41    54.68    Meet 4     The Swim Reapers

@@ -4,8 +4,8 @@ from dbParser import *
 connection = sqlite3.connect("swim_results.db")
 cursor = connection.cursor()
 
-with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file, \
-     open("SwimResults/unparsed.txt", "w", encoding="utf-8") as unparsed_file:
+with open("TextProcessing/goodOutput.txt", "r", encoding="utf-8") as file, \
+     open("TextProcessing/unparsed.txt", "w", encoding="utf-8") as unparsed_file:
     lines = file.readlines()
 
     meet_id = -1
@@ -23,12 +23,14 @@ with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file, \
                 """
                 INSERT OR IGNORE INTO meets (
                     meet_name,
+                    meet_location,
                     meet_date
                 )
-                VALUES (?, ?)
+                VALUES (?, ?, ?)
                 """,
                 (
                     meet["meet_name"],
+                    meet["meet_location"],
                     meet["meet_date"],
                 ),
             )
@@ -91,10 +93,16 @@ with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file, \
         elif result is not None:
             cursor.execute(
                 """
-                INSERT OR IGNORE INTO teams (team_name)
-                VALUES (?)
+                INSERT OR IGNORE INTO teams (
+                team_name,
+                team_code
+                )
+                VALUES (?, ?)
                 """,
-                (result["team"],)
+                (
+                    result["team"],
+                    result["team_code"]
+                )
             )
 
             cursor.execute(
@@ -141,6 +149,7 @@ with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file, \
 
             swimmer_id = cursor.fetchone()[0]
             points = calculate_points(result["place"])
+            time_seconds = time_converter(result["time"])
 
             cursor.execute(
                 """
@@ -152,9 +161,10 @@ with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file, \
                     place,
                     age,
                     display_time,
+                    time_seconds,
                     points
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     event_id,
@@ -164,6 +174,7 @@ with open("SwimResults/goodOutput.txt", "r", encoding="utf-8") as file, \
                     result["place"],
                     result["age"],
                     result["time"],
+                    time_seconds,
                     points
                 )
             )
