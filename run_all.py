@@ -89,7 +89,8 @@ elif choice == "9":
                     os.remove(file_path)
                     print(f"Deleted: {filename}")
 
-    shutil.rmtree("__pycache__")
+    if os.path.exists("__pycache__"):
+        shutil.rmtree("__pycache__")
 
 else:
     print("Invalid option.")

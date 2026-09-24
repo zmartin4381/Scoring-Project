@@ -60,3 +60,78 @@ Place First Name   Last Name    Age   Time     Meet       Team
 58    Ricky        Veatch       32    1:26.81  Meet 5     WashedWealth
 59    Masahiro     Kato         27    1:11.83  Meet 5     WoodPac   
 60    William      Adams        60    1:22.50  Meet 5     Currents  
+
+18-29
+--------------------------------------------------------------------------
+1     Norah        Rothman      22    31.85    Meet 1     Currents  
+2     Maggie       Rook         21    32.00    Meet 1     Hard Times Swim
+3     Nomi         Bortnick     20    32.15    Meet 1     Currents  
+4     Erica        McGovern     29    33.50    Meet 1     The Swim Reapers
+5     Evan         Graham       20    57.62    Meet 5     Slowbro SC
+6     Alex         Colson       25    57.69    Meet 5     The Swim Reapers
+7     Daniel       Greigg       24    1:10.00  Meet 1     Hard Times Swim
+8     William      Rook         19    1:12.12  Meet 1     Hard Times Swim
+9     Quinn        Marchionini  20    1:01.05  Meet 1     Silver Spring
+10    Jack         Shaffer      20    1:12.58  Meet 1     Glenwood Tigers
+11    Jake         Balatan      20    1:14.61  Meet 3     Silver Spring
+12    Ben          Frick        26    1:31.50  Meet 2     KSCRW     
+13    Nicolas      Concepcion   24    1:17.84  Meet 5     KSCRW     
+14    James        Kissel       21    1:07.74  Meet 4     Slowbro SC
+15    Caleb        Chen         19    1:10.27  Meet 2     Currents  
+16    Braden       Mallios      22    1:07.97  Meet 3     Currents  
+17    Will         Mayo         21    1:03.56  Meet 5     Currents  
+18    Nick         Lowell       22    1:05.42  Meet 2     KSCRW     
+19    Ray          Mukoyama     19    1:04.74  Meet 5     Slowbro SC
+20    Garrett      Sooter       28    1:10.03  Meet 3     Cool Down Club
+21    CJ           Arena        27    1:07.25  Meet 3     Cool Down Club
+22    Masahiro     Kato         27    1:11.83  Meet 5     WoodPac   
+
+30-39
+--------------------------------------------------------------------------
+1     Bill         Corrigan     37    1:16.05  Meet 5     The Swim Reapers
+2     Eric         Schaffling   35    1:12.64  Meet 1     The Swim Reapers
+3     Jon          Burnsky      33    1:13.64  Meet 4     The Wet Bandits
+4     Kempsey      Clark        36    1:21.04  Meet 3     KSCRW     
+5     Alex         Ochs         32    1:27.41  Meet 1     KSCRW     
+6     Akshay       Gandhi       36    1:17.58  Meet 5     Slowbro SC
+7     Jason        George       39    1:25.92  Meet 1     KSCRW     
+8     Mark         Smith        32    1:05.50  Meet 3     Slowbro SC
+9     Michael      Ledecky      32    1:18.54  Meet 2     Currents  
+10    Sam          Carley       30    1:14.13  Meet 5     The Wet Bandits
+11    Ricky        Veatch       32    1:26.81  Meet 5     WashedWealth
+
+40-49
+--------------------------------------------------------------------------
+1     Paul         Burnsky      43    1:12.11  Meet 1     The Wet Bandits
+2     Matt         Brew         45    1:35.00  Meet 3     The Swim Reapers
+3     JP           Winchester   48    1:21.42  Meet 1     Currents  
+4     Jamie        Grimes       47    1:15.46  Meet 3     Slowbro SC
+5     Peter        Johnson      41    1:18.92  Meet 2     Silver Spring
+6     Robert       Murphy       47    1:20.28  Meet 3     Glenwood Tigers
+7     Chad         Chadbourn    42    1:31.61  Meet 2     Silver Spring
+8     Joel         lams         47    1:24.15  Meet 1     Glenwood Tigers
+9     James        Martens      44    1:10.79  Meet 2     Currents  
+10    Jeremy       Butler       45    1:10.67  Meet 2     Glenwood Tigers
+11    Jon          Hegna        47    1:20.54  Meet 5     Currents  
+
+50-59
+--------------------------------------------------------------------------
+1     Timothy      Melinson     51    1:23.08  Meet 2     Currents  
+2     Anthony      Higgins      57    1:12.08  Meet 2     The Swim Reapers
+3     Zane         Aldworth     50    1:25.63  Meet 4     Hard Times Swim
+4     Brian        Frantz       50    1:28.23  Meet 2     The Swim Reapers
+5     Jose         Gallagher    50    1:09.84  Meet 3     The Wet Bandits
+6     Patrick      Baker        54    1:23.45  Meet 1     Currents  
+7     Vaughan      Brien        51    1:22.00  Meet 1     Silver Spring
+8     Russell      Green        54    1:37.10  Meet 1     Somerset Whales
+9     Jeff         Roddin       57    1:11.82  Meet 1     Glenwood Tigers
+10    Michael      Roark        58    1:35.38  Meet 2     Somerset Whales
+
+60-69
+--------------------------------------------------------------------------
+1     Steve        Jolles       68    1:45.90  Meet 1     The Swim Reapers
+2     Steven       Cheng        62    1:45.79  Meet 2     The Swim Reapers
+3     Karl         Wunderlich   61    1:22.23  Meet 2     KSCRW     
+4     Gerry        Schaffling   65    1:29.14  Meet 3     The Swim Reapers
+5     Jeff         Hopkins      62    1:59.15  Meet 3     Daleview Pace
+6     William      Adams        60    1:22.50  Meet 5     Currents  

@@ -43,3 +43,67 @@ Place First Name   Last Name    Age   Time     Meet       Team
 41    Ena          Bromley      59    57.77    Meet 1     Hard Times Swim
 42    Linda        Carter       84    1:00.00  Meet 1     The Swim Reapers
 43    Priscilla    Bacon        53    1:01.05  Meet 1     Silver Spring
+
+18-29
+--------------------------------------------------------------------------
+1     Hannah       Chao         27    32.11    Meet 5     Currents  
+2     Annaklara    Doel         27    35.05    Meet 5     Cool Down Club
+3     Audrey       Csokmay      22    35.53    Meet 4     Slowbro SC
+4     Nomi         Bortnick     20    36.87    Meet 1     Currents  
+5     Mia          Spahn        20    38.91    Meet 5     WashedWealth
+6     Maija        Fitzpatrick  24    39.11    Meet 2     KSCRW     
+7     Sara         Spahn        20    39.71    Meet 5     WashedWealth
+8     Caroline     Florence     29    40.40    Meet 4     Cool Down Club
+9     Emma         Tom          23    42.57    Meet 5     WoodPac   
+
+30-39
+--------------------------------------------------------------------------
+1     Gigi         Gigliotti    34    30.99    Meet 5     Hard Times Swim
+2     Cara         Chuang       34    34.23    Meet 5     Slowbro SC
+3     Courtney     Randolph     35    35.44    Meet 1     Slowbro SC
+4     Emma         Coggins      30    39.16    Meet 5     The Swim Reapers
+5     Raienne      Oliver       39    39.66    Meet 2     Hard Times Swim
+6     Jacquelyn    Braithwaite  31    43.85    Meet 5     WoodPac   
+7     Colleen      Nolan        39    44.23    Meet 5     DMV Free Agents
+8     Gabby        Cruz         31    45.68    Meet 4     Silver Spring
+9     Rachel       Jung         33    47.18    Meet 4     The Swim Reapers
+10    Chelsea      Yeatman      38    53.14    Meet 1     The Swim Reapers
+
+40-49
+--------------------------------------------------------------------------
+1     Kim          Brien        44    37.05    Meet 5     Silver Spring
+2     Brooke       Kenny        48    39.99    Meet 2     Glenwood Tigers
+3     Samantha     Herrera      44    40.17    Meet 1     Silver Spring
+4     Allison      Beinecke     43    40.81    Meet 5     The Swim Reapers
+5     Alexis       Crowley      43    41.25    Meet 5     The Wet Bandits
+6     Laura        Herbert      48    41.67    Meet 5     KSCRW     
+7     Alison       Williams     41    42.45    Meet 2     Slowbro SC
+8     Pam          Stokes       40    43.27    Meet 2     The Wet Bandits
+9     Ginny        Glasgow      47    45.77    Meet 1     Currents  
+10    Norah        Lebruto      46    45.87    Meet 2     Silver Spring
+11    Jeanie       Lemons       44    49.66    Meet 2     Slowbro SC
+12    Kelly        Seyed        47    50.01    Meet 2     The Wet Bandits
+13    Emily        DeSantis     46    50.47    Meet 5     Daleview Pace
+14    Valerie      Grussing     48    53.67    Meet 4     Glenwood Tigers
+
+50-59
+--------------------------------------------------------------------------
+1     Jenny        Carswell     52    41.67    Meet 2     KSCRW     
+2     Rebecca      Fayed        52    46.49    Meet 5     Wildwood Wombats
+3     Virginia     Sheikh       52    50.18    Meet 5     The Wet Bandits
+4     Marion       Chakiath     52    55.12    Meet 5     KSCRW     
+5     Ena          Bromley      59    57.77    Meet 1     Hard Times Swim
+6     Priscilla    Bacon        53    1:01.05  Meet 1     Silver Spring
+
+60-69
+--------------------------------------------------------------------------
+1     Susan        Williams     60    35.49    Meet 5     Hard Times Swim
+2     Sarah        DeCosse      62    52.42    Meet 4     Currents  
+
+70-79
+--------------------------------------------------------------------------
+1     Mary         Pastel       73    54.00    Meet 1     The Swim Reapers
+
+80+
+--------------------------------------------------------------------------
+1     Linda        Carter       84    1:00.00  Meet 1     The Swim Reapers
